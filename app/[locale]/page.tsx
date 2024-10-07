@@ -9,12 +9,17 @@ export default function HomePage() {
   const { theme } = useTheme()
 
   return (
-    <div className="flex size-full flex-col items-center justify-center">
-      <div>
-        <ChatbotUISVG theme={theme === "dark" ? "dark" : "light"} scale={0.3} />
+ 	<div className="flex size-full flex-col items-center justify-center">
+      	<div className="mb-2">
+        <img
+          src={`${theme === "dark" ? "/images/lightlogo.png" : "/images/logo.png"} `}
+          alt="logo"
+          width={135}
+          height={135}
+        />
+        {/* <ChatbotUISVG theme={theme === "dark" ? "dark" : "light"} scale={0.3} /> */}
       </div>
-
-      <div className="mt-2 text-4xl font-bold">Chatbot UI</div>
+      <div className="mt-2 text-3xl font-bold">Smart Medical History</div>
 
       <Link
         className="mt-4 flex w-[200px] items-center justify-center rounded-md bg-blue-500 p-2 font-semibold"
