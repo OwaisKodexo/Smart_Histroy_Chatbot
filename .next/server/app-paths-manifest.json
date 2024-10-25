@@ -1,0 +1,7 @@
+{
+  "/api/chat/openai/route": "app/api/chat/openai/route.js",
+  "/api/keys/route": "app/api/keys/route.js",
+  "/[locale]/page": "app/[locale]/page.js",
+  "/[locale]/login/page": "app/[locale]/login/page.js",
+  "/[locale]/[workspaceid]/chat/page": "app/[locale]/[workspaceid]/chat/page.js"
+}
