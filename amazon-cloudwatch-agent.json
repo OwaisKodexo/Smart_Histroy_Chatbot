@@ -1,0 +1,39 @@
+{
+  "metrics": {
+    "metrics_collected": {
+      "docker": {
+        "metrics_collection_interval": 60,
+        "container_name": [
+          "supabase_studio_chatbotui",
+          "supabase_pg_meta_chatbotui",
+          "supabase_edge_runtime_chatbotui",
+          "supabase_imgproxy_chatbotui",
+          "supabase_storage_chatbotui",
+          "supabase_rest_chatbotui",
+          "supabase_realtime_chatbotui",
+          "supabase_inbucket_chatbotui",
+          "supabase_auth_chatbotui",
+          "supabase_kong_chatbotui",
+          "supabase_db_chatbotui"
+        ],
+        "measurement": [
+          {
+            "name": "cpu_usage",
+            "rename": "ContainerCpuUsage",
+            "unit": "Percent"
+          },
+          {
+            "name": "memory_usage",
+            "rename": "ContainerMemoryUsage",
+            "unit": "Bytes"
+          },
+          {
+            "name": "memory_limit",
+            "rename": "ContainerMemoryLimit",
+            "unit": "Bytes"
+          }
+        ]
+      }
+    }
+  }
+}

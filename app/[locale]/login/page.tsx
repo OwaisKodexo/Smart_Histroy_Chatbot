@@ -53,15 +53,14 @@ export default async function Login({
 
     const email = formData.get("email") as string
     const password = formData.get("password") as string
-    console.log("email",email,"password",password);
     const cookieStore = cookies()
     const supabase = createClient(cookieStore)
 
     const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password
-    }) 
-    console.log("error",error)
+    })
+
     if (error) {
       return redirect(`/login?message=${error.message}`)
     }
